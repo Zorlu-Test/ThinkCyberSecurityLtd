@@ -1,4 +1,4 @@
-Feature: Think Cyber Security tests
+Feature: UI Think Cyber Security tests
   @API
   Scenario Outline: Post a number verify  respond body and headers
     Given  I post the number "<Numbers>"

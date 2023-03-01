@@ -20,7 +20,7 @@ public class Hooks {
     }
 
 
-    @After(value = "@IU")
+    @After(value = "@UI")
     public void tearDown(Scenario scenario) throws InterruptedException {
 
         Thread.sleep(400);
