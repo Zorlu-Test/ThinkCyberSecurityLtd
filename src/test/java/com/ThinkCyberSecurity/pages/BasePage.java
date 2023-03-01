@@ -17,7 +17,7 @@ public abstract class BasePage {
     Random random = new Random();
     public Actions actions = new Actions(Driver.getDriver());
     public Select select;
-    public WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+    public WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
     public Faker faker = new Faker();
 
     public BasePage() {

@@ -19,9 +19,10 @@ public class Api_Factorial_Steps {
     static int inputUser;
     Response response;
 
-    @Given("I post the number {int}")
-    public void iPostTheNumber(int input) {
-        inputUser = input;
+
+    @Given("I post the number {string}")
+    public void iPostTheNumber(String input) {
+        inputUser = Integer.parseInt(input);
 
         response = given()
                 .accept(ContentType.JSON)
@@ -30,9 +31,8 @@ public class Api_Factorial_Steps {
                 .post(baseURI)
                 .then()
                 .extract().response();
-
-
     }
+
 
     @Then("Verify  status code should be {int}")
     public void verifyStatusCodeShouldBe(int statusCode) {
@@ -67,4 +67,7 @@ public class Api_Factorial_Steps {
 
 
     }
+
+
+
 }

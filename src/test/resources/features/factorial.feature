@@ -1,9 +1,9 @@
-@IU
 Feature: Think Cyber Security tests
+
 
   Background:
     Given I am on the website
-
+  @UI
   Scenario Outline: Validate form validation styling
     When I enter an invalid input "<invalidInput>"
     Then I should see the red form validation styling
@@ -24,10 +24,12 @@ Feature: Think Cyber Security tests
       | -            |
       | _3           |
 
+  @UI
   Scenario: Calculate factorial of 5
     When I input the number 5 and click on Calculate
     Then I should see the result 120
 
+  @UI
   Scenario Outline:  Calculate factorial of bunch of numbers
 
     When I input the number "<Numbers>"
@@ -48,10 +50,9 @@ Feature: Think Cyber Security tests
       | 1001    |
       | 01      |
 
-  Scenario:  Calculate in put by press enter
+  @UI
+  Scenario:  Calculate by press enter
     When I input  the number 3 and press enter
     Then Verify  the number calculated
 
 
-Scenario: Api figure out
-  When dnm

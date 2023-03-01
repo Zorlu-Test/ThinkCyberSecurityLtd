@@ -2,6 +2,7 @@ package com.ThinkCyberSecurity.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.apiguardian.api.API;
 import org.junit.runner.RunWith;
 
 
@@ -15,8 +16,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources",
         glue = "com/ThinkCyberSecurity/step_Definition",
-        dryRun = false ,
-        tags = "@mvn"
+        dryRun = false,
+        tags = "@UI or  @API"
 )
 public class CukesRunner {
 
