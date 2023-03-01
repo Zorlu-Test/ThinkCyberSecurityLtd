@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
         },
         features = "@target/rerun.txt",
-        glue = "com/Specifi_IO/step_Definition"
+        glue = "com/ThinkCyberSecurity/step_Definition"
 
 )
 public class FailedTestRunner {
